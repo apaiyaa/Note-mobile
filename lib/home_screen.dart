@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'Screens/components/bottombar.dart';
 import 'Screens/components/custom_appbar.dart';
 import 'Screens/components/list_button.dart';
 import 'Screens/components/list_data.dart';
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      bottomNavigationBar: const CustomBottomBar(),
       body: SafeArea(
           child: ListView(
         children: const [
